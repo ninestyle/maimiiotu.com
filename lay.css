@@ -1,0 +1,115 @@
+/*
+    Version: 1.22.0
+    Last Modified: 2025-08-08
+    Author: Maxim
+    Contact: https://www.maxim.pe.kr
+    License: © 2025 Maxim. All Rights Reserved.
+    Theme: MAI MI IOTU - Minimal White
+*/
+
+:root {
+    /* Light Mode Defaults - Minimal White Theme */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8F9FA;
+    --bg-navbar-animated: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(248, 249, 250, 0.85), rgba(255, 255, 255, 0.8));
+    --bg-footer: #212529;
+    --bg-card: #FFFFFF;
+    --bg-lang-switcher: #E9ECEF;
+    --bg-lang-switcher-hover: #DEE2E6;
+    --bg-lang-switcher-active: #343A40;
+    --bg-nav-icon-button: #343A40;
+    --bg-nav-icon-button-hover: #495057;
+    --bg-to-top-button: rgba(0, 0, 0, 0.7);
+    --bg-to-top-button-hover: rgba(0, 0, 0, 0.9);
+    --bg-overlay: rgba(0, 0, 0, 0.5);
+    --bg-price-image-placeholder: #F1F3F5;
+
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --text-headings: #000000;
+    --text-accent: #000000;
+    --text-accent-hover: #343A40;
+    --text-footer: #CED4DA;
+    --text-navbar: #000000;
+    --text-lang-switcher: #343A40;
+    --text-lang-switcher-active: #FFFFFF;
+    --text-nav-icon-button: #FFFFFF;
+    --text-to-top-button: #FFFFFF;
+    --text-home-title: #FFFFFF;
+    --text-home-subtitle: #F8F9FA;
+    --text-section-title-icon: #ADB5BD;
+
+    --border-card: #E9ECEF;
+    --border-navbar-bottom: #DEE2E6;
+    --border-section-heading-underline: #000000;
+
+    --shadow-card: rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: rgba(0, 0, 0, 0.12);
+    --shadow-navbar: rgba(0, 0, 0, 0.05);
+    --shadow-home-text: rgba(0, 0, 0, 0.4);
+    --shadow-home-subtitle-text: rgba(0, 0, 0, 0.6);
+
+    --image-filter-default: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark Mode Defaults - Minimal Dark Theme */
+        --bg-primary: #121212;
+        --bg-secondary: #1E1E1E;
+        --bg-navbar-animated: linear-gradient(45deg, rgba(30, 30, 30, 0.8), rgba(18, 18, 18, 0.85), rgba(30, 30, 30, 0.8));
+        --bg-footer: #000000;
+        --bg-card: #2C2C2C;
+        --bg-lang-switcher: #333333;
+        --bg-lang-switcher-hover: #444444;
+        --bg-lang-switcher-active: #E0E0E0;
+        --bg-nav-icon-button: #E0E0E0;
+        --bg-nav-icon-button-hover: #FFFFFF;
+        --bg-to-top-button: rgba(255, 255, 255, 0.7);
+        --bg-to-top-button-hover: rgba(255, 255, 255, 0.9);
+        --bg-overlay: rgba(0, 0, 0, 0.6);
+        
+        --text-primary: #E0E0E0;
+        --text-secondary: #AAAAAA;
+        --text-headings: #FFFFFF;
+        --text-accent: #FFFFFF;
+        --text-accent-hover: #CCCCCC;
+        --text-footer: #777777;
+        --text-navbar: #FFFFFF;
+        --text-lang-switcher: #E0E0E0;
+        --text-lang-switcher-active: #121212;
+        --text-nav-icon-button: #121212;
+        --text-to-top-button: #000000;
+        --text-section-title-icon: #777777;
+
+        --border-card: #444444;
+        --border-navbar-bottom: #333333;
+        --border-section-heading-underline: #FFFFFF;
+
+        --shadow-card: rgba(0, 0, 0, 0.2);
+        --shadow-card-hover: rgba(0, 0, 0, 0.3);
+        --shadow-navbar: rgba(0, 0, 0, 0.2);
+
+        --image-filter-default: brightness(0.85);
+    }
+}
+
+body {
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+}
+
+#navbar .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#home h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 1rem + 6vw, 5rem);
+}
+
+#home h1 strong {
+    font-weight: 700;
+}
